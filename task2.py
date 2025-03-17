@@ -6,8 +6,10 @@ r = int(input())
 x = int(input())
 y = int(input())
 
-if (xc - x) ^ 2 + (yc - y) ^ 2 < r ** 2:
+if (xc - x) ** 2 + (yc - y) ** 2 < r ** 2:
     print("Точка внутри окружности.")
+elif (xc - x) ** 2 + (yc - y) ** 2 == r ** 2:
+    print("Точка на окружности.")
 else:
     print("Точка вне окружности.")
 
